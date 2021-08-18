@@ -1,0 +1,14 @@
+.contactName,
+.contactNumber {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: center;
+}
+.contactName {
+  margin-right: 10px;
+}
+.contactBtn {
+  height: 20px;
+  margin-left: auto;
+  cursor: pointer;
+}
