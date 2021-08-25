@@ -15,7 +15,7 @@ const App = () => {
       name,
       number,
     };
-    const checkingContacts = el => el.name === name;
+    const checkingContacts = el => el.name.toLowerCase() === name.toLowerCase();
 
     if (contacts.some(checkingContacts)) {
       alert(`${name} is alreaby in contacts`);
@@ -56,7 +56,7 @@ const App = () => {
   return (
     <div className={s.container}>
       <h1 className={s.title}>Phonebook</h1>
-      <ContactForm onSubmit={addContact} />
+      <ContactForm onSubmit={addContact} contacts={contacts} />
 
       <h2>Contacts</h2>
       <Filter value={filter} onChange={chengeFilter} />
